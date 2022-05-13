@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cuerpo">
+            <div class="logo">
+                <img class="logodeAlura" src="Imagenes/Logo.png">
+                
+            </div>
+            <div class="lado-Izquierdo">
+                <input class="text-input" id="inputTexto" type="text" placeholder="Ingrese el texto aqui">
+            </div>
+            <div class="celdaDerecha">
+                <img src="Imagenes/Muñeco.png" id="imgMuneco">
+                <h4 id="mensaje1">Ningun mensaje fue encontrado</h4>
+                <textarea id="mensaje2" name="name" cols="80" rows="8">Ingrese el texto que desee encriptar o desencriptar</textarea>
+                <button id="copiar" type="button" name="button" onclick="copiar()">copiar</button>
+            </div>
+            <div class="botonesBT">
+                <img src="Imagenes/cuidado.png" id="exclamacion">
+                <h6 id="advertencia">Solo letras minusculas y sin acentos</h6>
+                <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <footer >
+            <h5 class="desarrollador">Dessarrollado por: Francisco Marte: <I>@franciscomarte</I></h5>
+        </footer>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+    </html>
